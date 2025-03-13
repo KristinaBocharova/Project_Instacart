@@ -1,17 +1,37 @@
-# Project Description
+# **Instacart Customer Behavior Analysis**  
 
-This project focuses on analyzing customer behavior using data from Instacart, a popular grocery delivery platform. The aim is to clean and preprocess the data, generate insightful analyses, and create visualizations that offer a deeper understanding of shopping habits. By examining customer behavior, we will identify patterns and trends to inform business decisions.
+## **Project Description:**  
+This project focuses on analyzing customer behavior using data from Instacart, a popular grocery delivery platform. The aim is to clean and preprocess the data, generate insightful analyses, and create visualizations that offer a deeper understanding of shopping habits. By examining customer behavior, we will identify patterns and trends to inform business decisions. 
 
-## Methods and Libraries Used
+## **Datasets:**  
+instacart_orders.csv: each row corresponds to one order on the Instacart app
+'order_id': ID number that uniquely identifies each order
+'user_id': ID number that uniquely identifies each customer account
+'order_number': the number of times this customer has placed an order
+'order_dow': day of the week that the order placed (which day is 0 is uncertain)
+'order_hour_of_day': hour of the day that the order was placed
+'days_since_prior_order': number of days since this customer placed their previous order
 
-### Python
-The primary programming language used for data processing and analysis.
+products.csv: each row corresponds to a unique product that customers can buy
+'product_id': ID number that uniquely identifies each product
+'product_name': name of the product
+'aisle_id': ID number that uniquely identifies each grocery aisle category
+'department_id': ID number that uniquely identifies each grocery department category
 
-### Pandas
-Used for cleaning, manipulating, and analyzing the dataset.
+order_products.csv: each row corresponds to one item placed in an order
+'order_id': ID number that uniquely identifies each order
+'product_id': ID number that uniquely identifies each product
+'add_to_cart_order': the sequential order in which each item was placed in the cart
+'reordered': 0 if the customer has never ordered this product before, 1 if they have
 
-### Seaborn & Plotly
-Used for creating statistical and interactive visualizations.
+aisles.csv:
+'aisle_id': ID number that uniquely identifies each grocery aisle category
+'aisle': name of the aisle
 
-### Matplotlib
-Used for customizing and enhancing visual representations of the data.
+departments.csv:
+'department_id': ID number that uniquely identifies each grocery department category
+'department': name of the department
+
+## **Tools Used:**  
+- Python (pandas, seaborn, plotly, matplotlib)  
+- Exploratory Data Analysis (EDA)  
